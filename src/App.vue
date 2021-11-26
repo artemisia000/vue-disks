@@ -3,6 +3,10 @@
 
     <Header />
 
+  
+
+    <CardList />
+
 
 
 
@@ -14,12 +18,14 @@
 
 <script>
 import Header from '@/components/Header.vue';
+import CardList from '@/components/CardList.vue';
 
 
 export default {
   name: 'App',
   components: {
     Header,
+    CardList,
  
   }
 }
@@ -28,6 +34,13 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/styles/globals';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 
 
