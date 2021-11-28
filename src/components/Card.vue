@@ -41,22 +41,26 @@ export default {
     img{
         width: 100px;
         height: 100px;
-        margin:auto;
+        margin-top: 10px;
     }
 
     h3{
         font-size: 15px;
         text-transform: uppercase;
         color: #fff;
-        margin-top:15px;
+        margin-top:20px;
+       
     }
 
     h4{
         font-size: 14px;
+        margin-top: 8px;
+         margin-bottom: 2px;
     }
 
     p{
         font-size: 12px;
+        margin-bottom: 2px;
     }
 
     p:last-child{
