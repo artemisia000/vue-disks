@@ -24,7 +24,7 @@ export default {
    data(){
         return{
             lista: null,
-            searchGenre: '',
+           searchGenre: '',
         };
     },
     created(){
