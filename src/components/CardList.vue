@@ -1,34 +1,26 @@
 <template>
-
-  <section class="container" >
+<div class="body">
+  <section class="container text-center" >
     
-        <div v-if="lista !== null" class="row">
+        <div v-if="lista !== null" class="row justify-content-center">
 
-            <div class="col-6 col-md-4 col-lg-2"
+            <div class="col-6 col-md-4 col-lg-1 m-4 "
                  v-for="(card, index) in lista"
-                 :key="`card-${index}`"
-                    
+                 :key="`card-${index}`"            
             >   
-                   <Card 
-                    
+                   <Card            
                       :image= "card.poster"
                       :album= "card.title"
                       :artist= "card.author"
                       :date= "card.year"
                       :gen= "card.genre"
-                   
-                   
-                   
-                   
                    />
-
             </div>
-
         </div>
         <div v-else>Loading</div>
         
   </section>
-
+</div>
 
 </template>
 
@@ -73,14 +65,13 @@ export default {
 
 <style  scoped lang="scss">
 
-.poster{
-    width: 60px;
-    height: 200px;
+.body{
+    background-color: #1d2d3c;
+    width: 100%;
+    height: 100vh;
 }
 
-*{
-    color: #fff;
-}
-  
+
+
 
 </style>

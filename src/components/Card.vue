@@ -2,10 +2,10 @@
    <div class="disk">
 
         <img :src="image" alt="">
-        <h3>{{  album }}]</h3>
+        <h3>{{  album }}</h3>
         <h4>{{  artist }}</h4>
+        <p>{{  gen }}</p>
         <p>{{ date }}</p>
-        <p>{{  gen }}</p> 
 
 
    </div>
@@ -20,8 +20,8 @@ export default {
         image: String,
         album: String,
         artist: String,
-        date: String,
         gen: String,
+        date: String,
     },
 
 };
@@ -30,6 +30,39 @@ export default {
 
 
 <style  scoped lang="scss">
+
+.disk{
+    width: 120px;
+    height: 270px;
+    background-color: #2e3a46;
+    color: #73777c;
+    text-align: center;
+
+    img{
+        width: 100px;
+        height: 100px;
+        margin:auto;
+    }
+
+    h3{
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top:15px;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    p:last-child{
+        color: #fff;
+    }
+}
 
 
 

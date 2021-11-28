@@ -40,6 +40,10 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Outfit', sans-serif;
+  
 }
 
 
